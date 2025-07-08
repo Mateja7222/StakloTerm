@@ -32,6 +32,43 @@
     <link href="images/app-icon.png" rel="apple-touch-icon" />
     <script
         type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "RSD", "symbol": "RSD", "decimal": "", "fractionDigits": 0, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /* Osnovni stilovi za input polja i textarea */
+    .rl-form-input,
+    .rl-form-text-area {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* Flex raspored za dve kolone */
+    .rl_contact6_form-field-2col {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .rl_contact6_form-field-wrapper {
+      flex: 1;
+    }
+
+    /* Responsivni raspored na manjim ekranima */
+    @media screen and (max-width: 768px) {
+      .rl_contact6_form-field-2col {
+        flex-direction: column;
+      }
+
+      .rl_contact6_form-field-wrapper {
+        width: 100%;
+      }
+    }
+
+    /* Sprečava horizontalni skrol */
+    body {
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 
 <body>
